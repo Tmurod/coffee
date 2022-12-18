@@ -1,11 +1,21 @@
 
 @import "_mixins";
 
+body {
+  background: #F2F2F2;
+}
+
+@font-face {
+  font-family: 'Barlow',;
+  src: url("../fonts/Barlow-Medium.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: 'Barlow';
+  font-style: normal;
 }
 
 .container {
@@ -16,7 +26,7 @@
   margin-left: auto;
 
   @include xl {
-    max-width: 1140px;
+    max-width: 1440px;
   }
 
   @include lg {
@@ -29,5 +39,102 @@
 
   @include sm {
     max-width: 540px;
+  }
+
+  @include col {
+    max-width: 425px;
+  }
+}
+
+header {
+
+  .section-header {
+    padding: 44px 0;
+
+    ul {
+      gap: 33px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.923077px;
+          text-transform: uppercase;
+          color: #83888F;
+        }
+
+        a:hover {
+          color: #333D4B;
+        }
+      }
+    }
+  }
+}
+
+// sectioin-intro__first-page
+
+.section-intro__first-page {
+  
+  .intro__first-page {
+    background-image: url("../images/lg-first-page/lg-first-page__intro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+    h1 {
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: #FEFCF7;
+      width: 40%;
+      padding-left: 85px;
+      padding-top: 117px;
+      padding-bottom: 32px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FEFCF7;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      padding-left: 85px;
+      width: 35%;
+      padding-bottom: 56px;
+    }
+
+    button {
+      background: #0E8784;
+      margin-left: 85px;
+      border-radius: 6px;
+      margin-bottom: 116px;
+      padding: 15px 31px;
+      border: none;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FEFCF7;
+      cursor: pointer;
+    }
+  }
+}
+
+// section-collection__first-page
+
+.collection {
+
+  .section-collection__first-page {
+    background-image: url("../images/lg-first-page/our\ collection.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    
+    
   }
 }

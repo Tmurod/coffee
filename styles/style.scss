@@ -2,10 +2,37 @@
 @import "_styles.scss";
 @import "_mixins";
 
+
+
 header {
   
   .section-header {
     display: flex;
     justify-content: space-between;
+
+    ul {
+      display: flex;
+    }
+  }
+}
+
+// sectioin-intro__first-page
+
+// .section-intro__first-page {
+
+//   .intro__first-page {
+//   }
+// }
+
+// section-collection__first-page
+
+.collection {
+  
+  .section-collection__first-page {
+
+    .collection-info {
+      display: flex;
+    }
+    
   }
 }
