@@ -6,8 +6,14 @@ body {
 }
 
 @font-face {
-  font-family: 'Barlow',;
+  font-family: 'Barlow';
   src: url("../fonts/Barlow-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces 9pt";
+  src: url("../fonts/Fraunces_9pt/Fraunces_9pt-Regular.ttf");
+  font-style: normal;
 }
 
 * {
@@ -51,6 +57,10 @@ header {
   .section-header {
     padding: 44px 0;
 
+    img {
+      cursor: pointer;
+    }
+    
     ul {
       gap: 33px;
 
@@ -94,6 +104,7 @@ header {
       padding-left: 85px;
       padding-top: 117px;
       padding-bottom: 32px;
+      font-family: "Fraunces 9pt";
     }
 
     p {
@@ -119,6 +130,7 @@ header {
       font-size: 18px;
       line-height: 25px;
       color: #FEFCF7;
+      font-family: "Fraunces 9pt";
       cursor: pointer;
     }
   }
@@ -126,15 +138,17 @@ header {
 
 // section-collection__first-page
 
+
+ 
 .collection {
-
-  .section-collection__first-page {
-    background-image: url("../images/lg-first-page/our\ collection.svg");
+  
+  .section-collection {
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%), url("../images/lg-first-page/our collection.svg");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
-
     
-    
+    .collection {
+    }
   }
+  
 }
