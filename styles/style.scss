@@ -26,3 +26,52 @@ header {
 
 // section-collection__first-page
 
+.collection {
+
+  .section-collection {
+
+    .collection-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+// section-about
+
+.about {
+
+  .section-about {
+
+    .about-subtitle {
+      
+    }
+
+    .about-cards {
+      display: flex;
+      justify-content: space-evenly;
+      flex: 33%;
+
+      .about-card__seed, .about-card__box,
+      .about-card__truck {
+        flex: 1;
+      }
+    }
+  }
+}
+
+//section-number
+
+.number {
+
+  .section-number {
+
+    .number-subtitle {
+
+      .subtitle-oval {
+        
+      }
+    }
+  }
+}

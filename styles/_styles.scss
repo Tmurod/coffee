@@ -138,17 +138,138 @@ header {
 
 // section-collection__first-page
 
-
- 
 .collection {
-  
+
   .section-collection {
     background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%), url("../images/lg-first-page/our collection.svg");
     background-repeat: no-repeat;
     background-position: center;
-    
-    .collection {
+    background-size: contain;
+    padding-top: 136px;
+
+    .collection-info {
+        text-align: center;
+        padding-top: 240px;
+
+      .espresso-text, .planalto-text,
+      .picollo-text, .danche-text {
+        margin-top: 71px;
+
+        h3 {
+          font-family: 'Fraunces 9pt';
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          color: #333D4B;
+          text-transform: capitalize;
+          padding-bottom: 24px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #333D4B;
+          width: 255px;
+        }
+      }
+
     }
   }
   
+}
+
+// section-about
+
+.about {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  .section-about {
+    // background-color: black;
+    border-radius: 10px;
+    background-image: url("../images/lg-first-page/Bitmap.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .about-subtitle {
+     text-align: center;
+     color: #FEFCF7;
+     padding-top: 100px;
+
+      h1 {
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+      }
+
+      p {
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        opacity: 0.8;
+        margin-top: 32px;
+      }
+    }
+
+    .about-cards {
+      margin-left: 85px;
+      margin-right: 60px;
+      text-align: center;
+
+      .about-card__seed, .about-card__box,
+      .about-card__truck {
+        margin-right: 30px;
+        background: #0E8784;margin-top: 86px;
+        border-radius: 8px;
+
+        .card-header {
+          padding-top: 72px;
+          padding-bottom: 56px;
+        }
+
+        .card-body {
+
+          h2 {
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FEFCF7;
+            margin-bottom: 24px;
+          }
+
+          p {
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+            margin: 0 48px;
+            padding-bottom: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//section-number
+
+.number {
+
+  .section-number {
+
+    .number-subtitle {
+
+      .subtitle-oval {
+        background-image: url("../images/lg-first-page/number-line.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 760px;
+      }
+    }
+  }
 }
