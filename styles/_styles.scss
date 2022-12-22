@@ -261,15 +261,92 @@ header {
 .number {
 
   .section-number {
-
+    padding-left: 40px;
     .number-subtitle {
 
-      .subtitle-oval {
-        background-image: url("../images/lg-first-page/number-line.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 760px;
+      h3 {
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+        padding-bottom: 80px;
       }
+
+      .subtitle-oval {
+        padding-bottom: 67px;
+
+        .oval-1 {
+          position: relative;
+          left: 449px;
+        }
+
+        .oval-2 {
+          position: relative;
+          left: 729px;
+        }
+
+        .line {
+          position: absolute;
+          padding-left: 33px;
+          padding-top: 15px;
+          width: 960px;
+        }
+      }
+    }
+
+    .number-cards {
+
+      .cards-01, .cards-02, .cards-03 {
+        padding-bottom: 64px;
+        .cards-header {
+
+          h1 {
+            color: #FDD6BA;font-family: 'Fraunces 9pt';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            padding-bottom: 38px;
+          }
+
+          h2 {
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: #333D4B;
+            width: 50%;
+            padding-bottom: 42px;
+          }
+        }
+
+        .cards__body {
+
+          p {
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+            width: 78%;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: 'Fraunces 9pt';
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #FEFCF7;
+      background: #0E8784;
+      border-radius: 6px;
+      border: none;
+      padding: 16px 31px;
+      cursor: pointer;
     }
   }
 }
