@@ -259,9 +259,12 @@ header {
 //section-number
 
 .number {
+  padding-left: 100px;
+  padding-bottom: 200px;
 
   .section-number {
     padding-left: 40px;
+
     .number-subtitle {
 
       h3 {
@@ -278,12 +281,12 @@ header {
 
         .oval-1 {
           position: relative;
-          left: 449px;
+          left: 425px;
         }
 
         .oval-2 {
           position: relative;
-          left: 729px;
+          left: 859px;
         }
 
         .line {
@@ -299,6 +302,7 @@ header {
 
       .cards-01, .cards-02, .cards-03 {
         padding-bottom: 64px;
+      
         .cards-header {
 
           h1 {
@@ -347,6 +351,111 @@ header {
       border: none;
       padding: 16px 31px;
       cursor: pointer;
+    }
+  }
+}
+
+// footer
+
+footer {
+  padding-bottom: 88px;
+
+  .section-footer {
+    background: #2C343E;
+    padding: 47px 85px;
+
+    nav {
+
+      ul {
+        padding-right: 290px;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            font-family: 'Barlow';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            color: #83888F;
+            padding-right: 33px;
+          }
+        }
+      }
+    }
+
+    .footer-socials {
+      padding-left: 24px;
+
+      a {
+        padding-right: 24px;
+      }
+    }
+  }
+}
+
+
+
+// second-page
+
+.section-intro__second-page {
+  padding-bottom: 168px;
+
+  .intro-second {
+    background-image: url("../images/lg-second-page/intro-second__bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    h1 {
+      font-family: 'Fraunces 9pt';
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FEFCF7;
+      padding-top: 137px;
+      padding-left: 85px;
+      padding-bottom: 24px;
+    }
+
+    p {
+      font-family: 'Barlow';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FEFCF7;
+      padding-left: 85px;
+      width: 38%;
+      padding-bottom: 137px;
+    }
+  }
+}
+
+// intro-second__page
+
+.section-coffee__second-page {
+
+  .section-coffee {
+    
+    .coffee-with__man {
+      
+      .coffee-man__text {
+        
+        h2 {
+          font-family: 'Fraunces 9pt';
+          font-weight: 900;
+          font-size: 40px;
+          line-height: 48px;
+          color: #333D4B;
+        }
+
+        p {
+          width: 55%;
+        }
+      }
     }
   }
 }

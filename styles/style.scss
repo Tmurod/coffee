@@ -79,3 +79,37 @@ header {
     }
   }
 }
+
+// footer
+
+footer {
+
+  .section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+
+// second-page
+
+.section-coffee__second-page {
+
+  .section-coffee {
+    display: flex;
+    flex-direction: column;
+
+    .coffee-with__man, .coffee-glass {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
