@@ -104,12 +104,44 @@ footer {
 .section-coffee__second-page {
 
   .section-coffee {
-    display: flex;
-    flex-direction: column;
-
-    .coffee-with__man, .coffee-glass {
+    
+    .coffee-with__man {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
+    
+    .coffee-glass {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+// section-country__second-page
+
+.section-country__second-page {
+
+  .section-country {
+    width: 87%;
+
+    .country-info {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+
+
+// section-plan__third-page
+
+.section-plan__third-page {
+
+  .plan-arrow {
+
+    .plan-arrow__info {
+      display: flex;
+    }
+
   }
 }
