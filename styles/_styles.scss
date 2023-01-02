@@ -546,10 +546,46 @@ footer {
 }
 
 
+// section-intro__third-page 
+
+.section-intro__third-page {
+  margin-bottom: 177px;
+
+  .intro-third__page {
+    background-image: url("../images/lg-third-page/Bitmap.png");
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+      font-family: 'Fraunces 9pt';
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: #FEFCF7;
+      padding-top: 134px;
+      padding-left: 85px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FEFCF7;
+      opacity: 0.8;
+      max-width: 34%;
+      margin-left: 85px;
+      padding-bottom: 134px;
+    }
+  }
+}
 
 // section-plan__third-page
 
 .section-plan__third-page {
+  padding-bottom: 159px;
 
   .plan-arrow {
     background: #2C343E;      
@@ -588,11 +624,92 @@ footer {
     }
 
     .plan-arrow__line {
+      position: relative;
+      padding-bottom: 83px;
 
+      img {
+        position: absolute;
+        top: 105px;
+        width: 910px;
+      }
     }
 
     .plan-arrow__circle {
-      
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 7px;
+      }
+
+      .oval-03 {
+        left: 910px;
+      }
+
+      .oval-02 {
+        left: 470px;
+      }
+    }
+  }
+}
+
+// sectioin-cards__third-page
+
+.sectioin-cards__third-page {
+  margin-bottom: 168px;
+
+  .section-cards {
+
+    .cards-small {
+      hr {
+        opacity: 0.25;
+      }
+      .span-green {
+        color: #0E8784;
+      }
+
+      span {
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+        margin-right: 24px;
+      }
+
+      h2 {
+        padding: 24px 0;
+        margin-right: 30px;
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        opacity: 0.6;
+        color: #333D4B;
+      }
+
+      .active {
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+        opacity: 1;
+
+        span {
+          opacity: 1;
+        }
+      }
+    }
+    
+    .cards-info {
+
+      .card-info {
+
+        h1 {
+          
+        }
+      }
     }
   }
 }

@@ -142,6 +142,34 @@ footer {
     .plan-arrow__info {
       display: flex;
     }
+  }
+}
 
+// sectioin-cards__third-page
+
+.sectioin-cards__third-page {
+
+  .section-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 85px;
+    margin-right: 85px;
+    
+    .cards-small {
+      max-width: 38%;
+    }
+
+    .cards-info {
+      max-width: 62%;
+      
+      .card-info {
+        display: flex;
+        flex-direction: column;
+
+        .card-info__text {
+          display: flex;
+        }
+      }
+    }
   }
 }
