@@ -18,11 +18,27 @@ header {
 
 // sectioin-intro__first-page
 
-// .section-intro__first-page {
+.section-intro__first-page {
 
-//   .intro__first-page {
-//   }
-// }
+  .intro__first-page {
+
+    @include sm {
+      background-image: url("../images/responsive-laptop/Bitmap.png");
+      background-size: contain;
+    }
+
+    h1 {
+      @include sm {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 329px;
+        padding-left: 58px;
+        padding-top: 104px;
+      }
+    }
+  }
+}
 
 // section-collection__first-page
 
