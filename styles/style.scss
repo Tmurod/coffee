@@ -24,19 +24,31 @@ header {
 
     @include sm {
       background-image: url("../images/responsive-laptop/Bitmap.png");
-      background-size: contain;
+      background-size: cover;
+      border-radius: 10px;
+      background-repeat: no-repeat;
     }
 
-    h1 {
       @include sm {
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 48px;
-        max-width: 329px;
-        padding-left: 58px;
-        padding-top: 104px;
+
+        h1 {
+          font-size: 48px;
+          line-height: 48px;
+          padding-left: 58px;
+          padding-top: 104px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          padding-left: 58px;
+        }
+
+        button {
+          margin-left: 58px;
+        }
       }
-    }
   }
 }
 
@@ -52,6 +64,31 @@ header {
       justify-content: space-around;
     }
   }
+
+  @include sm {
+
+    .section-collection {
+      background: none;
+      padding-top: 0;
+      text-align: inherit;
+    }
+
+    .collection {
+      position: relative;
+    }
+
+    .collection-espresso, .collection-planalto, .collection-picollo, .collection-danche {
+      display: flex;
+      margin-top: 47px;
+      align-items: end;
+    }
+
+    .collection-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 // section-about
@@ -60,14 +97,16 @@ header {
 
   .section-about {
 
-    .about-subtitle {
-      
-    }
-
     .about-cards {
       display: flex;
       justify-content: space-evenly;
       flex: 33%;
+
+      @include sm {
+
+        display: flex;
+        flex-direction: column;
+      }
 
       .about-card__seed, .about-card__box,
       .about-card__truck {
@@ -77,21 +116,62 @@ header {
   }
 }
 
+
+
 //section-number
 
 .number {
 
   .section-number {
 
+    @include sm {
+      padding: 0;
+    }
+
     .number-subtitle {
 
       .subtitle-oval {
+
+        .line {
+
+          @include sm {
+            max-width: 55%;
+          }
+        }
+
+        .ovals {
+
+          @include sm {
+            position: absolute;
+          }
+        }
+
+        .oval-1 {
+
+          @include sm {
+            transform: translate(-200%);
+          }
+        }
+
+        .oval-2 {
+
+          @include sm {
+            transform: translate(-970%);
+          }
+        }
         
       }
     }
 
     .number-cards {
       display: flex;
+
+      h2 {
+
+        @include sm {
+
+        }
+      }
     }
   }
 }
@@ -104,10 +184,25 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
+
     nav {
 
       ul {
         display: flex;
+
+        @include sm {
+          padding: 0;
+          display: flex;
+          gap: 20px;
+          padding-left: 40px;
+          padding-top: 32px;
+          padding-bottom: 65px;
+        }
       }
     }
   }
@@ -117,18 +212,110 @@ footer {
 
 // second-page
 
+
+// section-intro
+
+.section-intro__second-page {
+
+  .intro-second {
+
+    @include sm {
+      background-image: url("../images/responsive-laptop/bg-second-page.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      @include sm {
+        padding-top: 118px;
+        padding-left: 58px;
+      }
+    }
+
+    p {
+      @include sm {
+        width: 70%;
+        padding-left: 58px;
+        opacity: 0.8;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+
+// section-coffee
+
 .section-coffee__second-page {
 
   .section-coffee {
+
+    @include sm {
+      padding-left: 0;
+    }
     
     .coffee-with__man {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+
+      img {
+        @include sm {
+          width: 281px;
+          height: 470px;
+        }
+      }
+
+      .coffee-man__text {
+
+        @include sm {
+          padding-left: 69px;
+        }
+
+        h2 {
+
+          @include sm {
+            font-size: 32px;
+          }
+        }
+
+        p {
+
+          @include sm {
+            font-size: 15px;
+            line-height: 25px;
+            width: 110%;
+          }
+        }
+      }
     }
     
     .coffee-glass {
       display: flex;
       justify-content: space-around;
+
+      @include sm {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+      }
+
+      img {
+        @include sm {
+          width: 573px;
+          height: 320px;
+          text-align: center;
+          margin-left: 46px;
+        }
+      }
+
+      p {
+        @include sm {
+          
+        }
+      }
     }
   }
 }

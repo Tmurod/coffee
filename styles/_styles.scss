@@ -52,6 +52,8 @@ body {
   }
 }
 
+
+
 header {
 
   .section-header {
@@ -100,7 +102,6 @@ header {
       font-size: 72px;
       line-height: 72px;
       color: #FEFCF7;
-      width: 40%;
       padding-left: 85px;
       padding-top: 117px;
       padding-bottom: 32px;
@@ -115,7 +116,6 @@ header {
       mix-blend-mode: normal;
       opacity: 0.8;
       padding-left: 85px;
-      width: 35%;
       padding-bottom: 56px;
     }
 
@@ -141,7 +141,7 @@ header {
 .collection {
 
   .section-collection {
-    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%), url("../images/lg-first-page/our collection.svg");
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%), url("../images/lg-first-page/our collection.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -442,12 +442,14 @@ footer {
   .section-coffee {
     
     .coffee-with__man {
+      padding-left: 85px;
 
       img {
         border-radius: 10px;
       }
 
       .coffee-man__text {
+        padding-left: 125px;
         
         h2 {
           font-family: 'Fraunces 9pt';
@@ -458,8 +460,8 @@ footer {
         }
 
         p {
-          width: 540px;
-          font-family: 'Barlow';
+          // width: 540px;
+          width: 65.1%;
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
