@@ -460,7 +460,6 @@ footer {
         }
 
         p {
-          // width: 540px;
           width: 65.1%;
           font-weight: 400;
           font-size: 16px;
@@ -478,6 +477,7 @@ footer {
       border-radius: 10px;
 
       .coffee-glass__text {
+        padding-left: 85px;
         
         h2 {
           font-family: 'Fraunces 9pt';
@@ -490,8 +490,7 @@ footer {
         }
 
         p {
-          width: 540px;
-          font-family: 'Barlow';
+          max-width: 72%;
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
@@ -501,6 +500,7 @@ footer {
       }
 
       img {
+        padding-right: 85px;
         margin-top: -88px;
         border-radius: 10px;
       }
@@ -686,6 +686,8 @@ footer {
         line-height: 32px;
         opacity: 0.6;
         color: #333D4B;
+        transition: 1s;
+        cursor: pointer;
       }
 
       h2:hover {
@@ -724,6 +726,8 @@ footer {
           background-color: #edebe7;
           border-radius: 10px;
           margin-right: 23px;
+          transition: 1s;
+          cursor: pointer;
 
           h3 {
             font-family: 'Fraunces 9pt';

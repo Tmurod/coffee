@@ -253,12 +253,15 @@ footer {
   .section-coffee {
 
     @include sm {
-      padding-left: 0;
     }
     
     .coffee-with__man {
       display: flex;
       justify-content: center;
+
+        @include sm {
+          padding: 0;
+        }
 
       img {
         @include sm {
@@ -270,6 +273,7 @@ footer {
       .coffee-man__text {
 
         @include sm {
+          padding: 0;
           padding-left: 69px;
         }
 
@@ -298,22 +302,19 @@ footer {
       @include sm {
         display: flex;
         flex-direction: column-reverse;
-        text-align: center;
         
       }
 
       img {
         @include sm {
-          width: 573px;
-          height: 320px;
-          text-align: center;
-          margin-left: 46px;
+          padding: 0;
+          max-width: 80%;
+          margin-left: 60px;
         }
       }
 
       p {
         @include sm {
-          
         }
       }
     }
@@ -327,23 +328,129 @@ footer {
   .section-country {
     width: 87%;
 
+    h2 {
+      @include sm {
+        padding-left: 0;
+      }
+    }
+
     .country-info {
       display: flex;
       justify-content: space-around;
+
+      @include sm {
+        display: flex;
+      }
+
+      .info-uk, .info-canada, .info-australia {
+        @include sm {
+          max-width: 33%;
+        }
+      }
     }
   }
 }
 
+// thir-page
 
+//section-intro__third-page
+
+.section-intro__third-page {
+
+  .intro-third__page {
+
+    @include sm {
+      background-image: url("../images/responsive-laptop/third-page.png");
+      background-position: center;
+    }
+
+    h1 {
+
+      @include sm {
+        padding-left: 58px;
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+
+    p {
+
+      @include sm {
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0;
+        max-width: 67%;
+        padding-left: 58px;
+      }
+    }
+  }
+}
 
 // section-plan__third-page
 
 .section-plan__third-page {
 
+  @include sm {
+    
+  }
+
+  .container {
+
+    @include sm {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+
   .plan-arrow {
+
+    @include sm {
+      padding-left: 50px;
+    }
+
+    .plan-arrow__line {
+
+      img {
+        @include sm {
+          max-width: 70%;
+        }
+      }
+    }
+
+    .plan-arrow__circle {
+
+      .oval-03 {
+        @include sm {
+          left: 35%;
+        }
+      }
+    }
 
     .plan-arrow__info {
       display: flex;
+
+      h1 {
+
+        @include sm {
+          
+        }
+      }
+
+      h2 {
+
+        @include sm {
+          font-size: 28px;
+          line-height: 32px;
+          max-width: 75%;
+        }
+      }
+
+      p {
+        @include sm {
+          
+        }
+      }
     }
   }
 }
