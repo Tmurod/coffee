@@ -10,6 +10,18 @@ header {
     display: flex;
     justify-content: space-between;
 
+    .burger {
+      @include col {
+        display: inline-block;
+      }
+    }
+
+    nav {
+      @include col {
+        display: none;
+      }
+    }
+
     ul {
       display: flex;
     }
@@ -22,11 +34,18 @@ header {
 
   .intro__first-page {
 
+    
+
     @include sm {
       background-image: url("../images/responsive-laptop/Bitmap.png");
       background-size: cover;
       border-radius: 10px;
       background-repeat: no-repeat;
+    }
+
+    @include col {
+      background-image: url("../images/responsive-phone/intro-first-page.png");
+      background-size: contain;
     }
 
       @include sm {
@@ -36,6 +55,13 @@ header {
           line-height: 48px;
           padding-left: 58px;
           padding-top: 104px;
+
+          @include col {
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            padding-left: 0;
+          }
         }
 
         p {
@@ -43,6 +69,13 @@ header {
           font-size: 15px;
           line-height: 25px;
           padding-left: 58px;
+
+          @include col {
+            font-size: 15px;
+            line-height: 25px;
+            padding-left: 0;
+            text-align: center;
+          }
         }
 
         button {
@@ -89,6 +122,13 @@ header {
       align-items: center;
     }
   }
+
+  .collection-espresso, .collection-planalto, .collection-picollo, .collection-danche {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 // section-about
@@ -96,6 +136,22 @@ header {
 .about {
 
   .section-about {
+    @include col {
+      background-image: none;
+    }
+
+    .about-subtitle {
+      @include col {
+        background-color: rgb(49, 48, 48);
+        border-radius: 10px;
+      }
+
+      p {
+        @include col {
+          padding-bottom: 64px;
+        }
+      }
+    }
 
     .about-cards {
       display: flex;
@@ -103,14 +159,21 @@ header {
       flex: 33%;
 
       @include sm {
-
         display: flex;
         flex-direction: column;
+      }
+
+      @include col {
+        margin: 0;
       }
 
       .about-card__seed, .about-card__box,
       .about-card__truck {
         flex: 1;
+
+        @include col {
+          width: 100%;
+        }
       }
     }
   }
@@ -133,46 +196,76 @@ header {
       .subtitle-oval {
 
         .line {
-
           @include sm {
             max-width: 55%;
           }
         }
 
         .ovals {
-
           @include sm {
             position: absolute;
           }
         }
 
         .oval-1 {
-
           @include sm {
             transform: translate(-200%);
           }
         }
 
         .oval-2 {
-
           @include sm {
             transform: translate(-970%);
           }
         }
-        
+
+        @include col {
+          display: none;
+        }
       }
     }
 
     .number-cards {
       display: flex;
 
-      h2 {
-
-        @include sm {
-
+        @include col {
+          display: flex;
+          flex-direction: column;
         }
+
+        .cards-01, .cards-02, 
+        .cards-03 {
+
+          .cards-header {
+
+            h2 {
+              @include col {
+                width: 100%;
+              }
+            }
+          }
+
+          .cards__body {
+
+            p {
+              @include col {
+                width: 100%;
+              }
+            }
+          }
+        }
+    }
+
+    button {
+      @include col {
+        margin-bottom: 120px;
       }
     }
+  }
+
+  @include col {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -193,6 +286,16 @@ footer {
     nav {
 
       ul {
+
+        li {
+
+          a {
+            @include col {
+              padding: 0;
+            }
+          }
+        }
+
         display: flex;
 
         @include sm {
@@ -203,7 +306,32 @@ footer {
           padding-top: 32px;
           padding-bottom: 65px;
         }
+
+        @include col {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0;
+        }
       }
+    }
+
+    .footer-socials {
+
+      a {
+        padding: 0;
+      }
+
+      @include col {
+        display: flex;
+        padding: 0;
+        gap: 24px;
+      }
+    }
+
+    @include col {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
   }
 }
@@ -390,10 +518,6 @@ footer {
 
 .section-plan__third-page {
 
-  @include sm {
-    
-  }
-
   .container {
 
     @include sm {
@@ -402,11 +526,10 @@ footer {
     }
   }
 
-
   .plan-arrow {
 
     @include sm {
-      padding-left: 50px;
+      padding-left: 40px;
     }
 
     .plan-arrow__line {
@@ -420,9 +543,15 @@ footer {
 
     .plan-arrow__circle {
 
+      .oval-02 {
+        @include sm {
+          left: 69%;
+        }
+      }
+
       .oval-03 {
         @include sm {
-          left: 35%;
+          left: 36%;
         }
       }
     }
@@ -430,11 +559,8 @@ footer {
     .plan-arrow__info {
       display: flex;
 
-      h1 {
-
-        @include sm {
-          
-        }
+      @include sm {
+        padding-bottom: 96px;
       }
 
       h2 {
@@ -448,7 +574,9 @@ footer {
 
       p {
         @include sm {
-          
+          max-width: 91%;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
     }
@@ -464,20 +592,73 @@ footer {
     justify-content: space-between;
     margin-left: 85px;
     margin-right: 85px;
+
+    @include sm {
+      margin: 0;
+    }
     
     .cards-small {
       max-width: 38%;
+
+      @include sm {
+        display: none;
+      }
     }
 
     .cards-info {
       max-width: 62%;
-      
+
+      @include sm {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
       .card-info {
         display: flex;
         flex-direction: column;
 
+        @include sm {
+          max-width: 100%;
+        }
+
+        h1 {
+          @include sm {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          img {
+            @include sm {
+              padding: 0;
+              text-align: end;
+            }
+          }
+        }
+
         .card-info__text {
           display: flex;
+
+          .info-grey {
+            @include sm {
+              margin-right: 10px;
+            }
+          }
+
+          p {
+            @include sm {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      .card-order {
+
+        p {
+          @include sm {
+            max-width: 90%;
+          }
         }
       }
     }

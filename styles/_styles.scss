@@ -48,7 +48,7 @@ body {
   }
 
   @include col {
-    max-width: 425px;
+    max-width: 355px;
   }
 }
 
@@ -61,6 +61,10 @@ header {
 
     img {
       cursor: pointer;
+    }
+
+    .burger {
+      display: none;
     }
     
     ul {
@@ -186,7 +190,6 @@ header {
   padding-bottom: 200px;
 
   .section-about {
-    // background-color: black;
     border-radius: 10px;
     background-image: url("../images/lg-first-page/Bitmap.png");
     background-repeat: no-repeat;
@@ -595,6 +598,7 @@ footer {
     padding-left: 85px;
 
     .plan-arrow__info {
+      padding-bottom: 96px;
 
       h1 {
         font-family: 'Fraunces 9pt';

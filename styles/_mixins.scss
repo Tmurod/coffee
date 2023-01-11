@@ -1,6 +1,6 @@
 
 @mixin col {
-  @media (max-width: 576px) {
+  @media (max-width: 375px) {
     @content;
   }
 }
