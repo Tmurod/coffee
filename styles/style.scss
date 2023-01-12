@@ -359,6 +359,11 @@ footer {
         padding-top: 118px;
         padding-left: 58px;
       }
+
+      @include col {
+        padding-left: 0;
+        text-align: center;
+      }
     }
 
     p {
@@ -369,7 +374,15 @@ footer {
         font-size: 15px;
         line-height: 25px;
       }
+
+      @include col {
+        padding-left: 24px;
+        text-align: center;
+        width: 95%;
+      }
     }
+
+    
   }
 }
 
@@ -391,10 +404,19 @@ footer {
           padding: 0;
         }
 
+        @include col {
+          display: flex;
+          flex-direction: column;
+        }
+
       img {
         @include sm {
           width: 281px;
           height: 470px;
+        }
+
+        @include col {
+          width: 100%;
         }
       }
 
@@ -405,10 +427,20 @@ footer {
           padding-left: 69px;
         }
 
+        @include col {
+          padding-left: 0;
+          text-align: center;
+        }
+
         h2 {
 
           @include sm {
             font-size: 32px;
+          }
+
+          @include col {
+            width: 100%;
+            padding-top: 40px;
           }
         }
 
@@ -418,6 +450,12 @@ footer {
             font-size: 15px;
             line-height: 25px;
             width: 110%;
+          }
+
+          @include col {
+            font-size: 15px;
+            line-height: 25px;
+            width: 100%;
           }
         }
       }
@@ -430,7 +468,10 @@ footer {
       @include sm {
         display: flex;
         flex-direction: column-reverse;
-        
+      }
+
+      @include col {
+        text-align: center;
       }
 
       img {
@@ -439,10 +480,32 @@ footer {
           max-width: 80%;
           margin-left: 60px;
         }
+
+        @include col {
+          margin-left: 10%;
+        }
       }
 
-      p {
-        @include sm {
+      .coffee-glass__text {
+        @include col {
+          padding-left: 0;
+        }
+
+        h2 {
+          @include col {
+            width: 100%;
+            font-size: 28px;
+            line-height: 28px;
+          }
+        }
+  
+        p {
+          @include col {
+            padding-left: 24px;
+            max-width: 93.5%;
+            font-size: 15px;
+            line-height: 25px;
+          }
         }
       }
     }
@@ -455,6 +518,11 @@ footer {
 
   .section-country {
     width: 87%;
+
+    @include col {
+      text-align: center;
+      width: 100%;
+    }
 
     h2 {
       @include sm {
@@ -470,10 +538,32 @@ footer {
         display: flex;
       }
 
+      @include col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .info-uk, .info-canada, .info-australia {
         @include sm {
           max-width: 33%;
         }
+
+        h1 {
+          @include col {
+            max-width: 100%;
+            font-size: 28px;
+            line-height: 36px;
+          }
+        }
+
+        p:last-child {
+          @include col {
+            padding-bottom: 80px;
+          }
+        }
+
+        
       }
     }
   }
@@ -492,12 +582,21 @@ footer {
       background-position: center;
     }
 
-    h1 {
+    @include col {
+      text-align: center;
+    }
 
+    h1 {
       @include sm {
         padding-left: 58px;
         font-size: 48px;
         line-height: 48px;
+      }
+
+      @include col {
+        padding-left: 0;
+        font-size: 40px;
+        line-height: 40px;
       }
     }
 
@@ -510,6 +609,14 @@ footer {
         max-width: 67%;
         padding-left: 58px;
       }
+
+      @include col {
+        padding-left:0;
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 90%;
+        padding-left: 24px;
+      }
     }
   }
 }
@@ -519,7 +626,6 @@ footer {
 .section-plan__third-page {
 
   .container {
-
     @include sm {
       max-width: 100%;
       padding: 0;
@@ -527,26 +633,31 @@ footer {
   }
 
   .plan-arrow {
-
     @include sm {
       padding-left: 40px;
     }
 
     .plan-arrow__line {
-
       img {
         @include sm {
           max-width: 70%;
+        }
+
+        @include col {
+          display: none;
         }
       }
     }
 
     .plan-arrow__circle {
-
       .oval-02 {
         @include sm {
           left: 69%;
         }
+      }
+
+      @include col {
+        display: none;
       }
 
       .oval-03 {
@@ -561,6 +672,15 @@ footer {
 
       @include sm {
         padding-bottom: 96px;
+      }
+
+      @include col {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
       }
 
       h2 {
