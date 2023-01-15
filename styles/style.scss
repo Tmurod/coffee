@@ -316,7 +316,9 @@ footer {
     }
 
     .footer-socials {
-
+      display: flex;
+      gap: 30px;
+      
       a {
         padding: 0;
       }
