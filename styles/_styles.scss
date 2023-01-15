@@ -53,7 +53,6 @@ body {
 }
 
 
-
 header {
 
   .section-header {
@@ -61,6 +60,11 @@ header {
 
     img {
       cursor: pointer;
+      transition: 1s;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .burger {
@@ -72,6 +76,12 @@ header {
 
       li {
         list-style: none;
+        transition: 1s;
+        
+        &:hover {
+          color: #333D4B;
+          transform: translate(5px, 5px);
+        }
 
         a {
           text-decoration: none;
@@ -81,11 +91,11 @@ header {
           letter-spacing: 0.923077px;
           text-transform: uppercase;
           color: #83888F;
+          
+          
         }
 
-        a:hover {
-          color: #333D4B;
-        }
+        
       }
     }
   }
@@ -136,6 +146,11 @@ header {
       color: #FEFCF7;
       font-family: "Fraunces 9pt";
       cursor: pointer;
+      transition: 1s;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -154,10 +169,19 @@ header {
     .collection-info {
         text-align: center;
         padding-top: 240px;
+        
+        div {
+        transition: 1s;
+          
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
 
       .espresso-text, .planalto-text,
       .picollo-text, .danche-text {
         margin-top: 71px;
+        
 
         h3 {
           font-family: 'Fraunces 9pt';
@@ -177,10 +201,8 @@ header {
           width: 255px;
         }
       }
-
     }
   }
-  
 }
 
 // section-about

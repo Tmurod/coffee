@@ -636,6 +636,11 @@ footer {
     @include sm {
       padding-left: 40px;
     }
+    
+    @include col {
+      padding-left: 24px;
+      text-align: center;
+    }
 
     .plan-arrow__line {
       img {
@@ -677,28 +682,47 @@ footer {
       @include col {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-left: 0;
-        padding-left: 0;
         width: 100%;
       }
-
-      h2 {
-
-        @include sm {
-          font-size: 28px;
-          line-height: 32px;
-          max-width: 75%;
+      
+      .plan-arrow__01, .plan-arrow__02, .plan-arrow__03 {
+        
+        @include col {
+          max-width: 100%;
+          padding-right: 24px;
         }
-      }
-
-      p {
-        @include sm {
-          max-width: 91%;
-          font-size: 15px;
-          line-height: 25px;
+        
+        h2 {
+          @include sm {
+            font-size: 28px;
+            line-height: 32px;
+          }
+          
+          @include col {
+            max-width: 100%;
+          }
         }
+        
+        p {
+          @include sm {
+            max-width: 91%;
+            font-size: 15px;
+            line-height: 25px;
+          }
+          
+          @include col {
+            max-width: 98.5%;
+          }
+        }
+        
+        
       }
+      
+      
+
+      
+
+      
     }
   }
 }
@@ -733,6 +757,11 @@ footer {
         display: flex;
         flex-direction: column;
       }
+      
+      @include col {
+        display: flex;
+        flex-direction: column;
+      }
 
       .card-info {
         display: flex;
@@ -741,9 +770,16 @@ footer {
         @include sm {
           max-width: 100%;
         }
-
+        
         h1 {
           @include sm {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          @include col {
+            font-size: 24px;
+            line-height: 28px;
             display: flex;
             justify-content: space-between;
           }
@@ -758,6 +794,11 @@ footer {
 
         .card-info__text {
           display: flex;
+          
+          @include col {
+            display: flex;
+            flex-direction: column;
+          }
 
           .info-grey {
             @include sm {
@@ -774,7 +815,7 @@ footer {
       }
 
       .card-order {
-
+        
         p {
           @include sm {
             max-width: 90%;
