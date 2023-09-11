@@ -1,16 +1,25 @@
-
 @import "_styles.scss";
 @import "_mixins";
 
-
-
 header {
-  
+
   .section-header {
     display: flex;
     justify-content: space-between;
 
+    .header-box {
+      display: none;
+
+      @include col {
+      width: 100%;
+      height: 100px;
+      background-color: purple;
+      }
+
+    }
+
     .burger {
+      cursor: pointer;
       @include col {
         display: inline-block;
       }
@@ -34,7 +43,7 @@ header {
 
   .intro__first-page {
 
-    
+
 
     @include sm {
       background-image: url("../images/responsive-laptop/Bitmap.png");
@@ -48,40 +57,40 @@ header {
       background-size: contain;
     }
 
-      @include sm {
+    @include sm {
 
-        h1 {
-          font-size: 48px;
-          line-height: 48px;
-          padding-left: 58px;
-          padding-top: 104px;
+      h1 {
+        font-size: 48px;
+        line-height: 48px;
+        padding-left: 58px;
+        padding-top: 104px;
 
-          @include col {
-            font-size: 40px;
-            line-height: 40px;
-            text-align: center;
-            padding-left: 0;
-          }
-        }
-
-        p {
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 25px;
-          padding-left: 58px;
-
-          @include col {
-            font-size: 15px;
-            line-height: 25px;
-            padding-left: 0;
-            text-align: center;
-          }
-        }
-
-        button {
-          margin-left: 58px;
+        @include col {
+          font-size: 40px;
+          line-height: 40px;
+          text-align: center;
+          padding-left: 0;
         }
       }
+
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 58px;
+
+        @include col {
+          font-size: 15px;
+          line-height: 25px;
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+
+      button {
+        margin-left: 58px;
+      }
+    }
   }
 }
 
@@ -110,7 +119,10 @@ header {
       position: relative;
     }
 
-    .collection-espresso, .collection-planalto, .collection-picollo, .collection-danche {
+    .collection-espresso,
+    .collection-planalto,
+    .collection-picollo,
+    .collection-danche {
       display: flex;
       margin-top: 47px;
       align-items: end;
@@ -123,7 +135,10 @@ header {
     }
   }
 
-  .collection-espresso, .collection-planalto, .collection-picollo, .collection-danche {
+  .collection-espresso,
+  .collection-planalto,
+  .collection-picollo,
+  .collection-danche {
     @include sm {
       display: flex;
       flex-direction: column;
@@ -167,7 +182,8 @@ header {
         margin: 0;
       }
 
-      .about-card__seed, .about-card__box,
+      .about-card__seed,
+      .about-card__box,
       .about-card__truck {
         flex: 1;
 
@@ -228,32 +244,33 @@ header {
     .number-cards {
       display: flex;
 
-        @include col {
-          display: flex;
-          flex-direction: column;
-        }
+      @include col {
+        display: flex;
+        flex-direction: column;
+      }
 
-        .cards-01, .cards-02, 
-        .cards-03 {
+      .cards-01,
+      .cards-02,
+      .cards-03 {
 
-          .cards-header {
+        .cards-header {
 
-            h2 {
-              @include col {
-                width: 100%;
-              }
-            }
-          }
-
-          .cards__body {
-
-            p {
-              @include col {
-                width: 100%;
-              }
+          h2 {
+            @include col {
+              width: 100%;
             }
           }
         }
+
+        .cards__body {
+
+          p {
+            @include col {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
 
     button {
@@ -318,7 +335,7 @@ footer {
     .footer-socials {
       display: flex;
       gap: 30px;
-      
+
       a {
         padding: 0;
       }
@@ -384,7 +401,7 @@ footer {
       }
     }
 
-    
+
   }
 }
 
@@ -395,21 +412,20 @@ footer {
 
   .section-coffee {
 
-    @include sm {
-    }
-    
+    @include sm {}
+
     .coffee-with__man {
       display: flex;
       justify-content: center;
 
-        @include sm {
-          padding: 0;
-        }
+      @include sm {
+        padding: 0;
+      }
 
-        @include col {
-          display: flex;
-          flex-direction: column;
-        }
+      @include col {
+        display: flex;
+        flex-direction: column;
+      }
 
       img {
         @include sm {
@@ -462,7 +478,7 @@ footer {
         }
       }
     }
-    
+
     .coffee-glass {
       display: flex;
       justify-content: space-around;
@@ -500,7 +516,7 @@ footer {
             line-height: 28px;
           }
         }
-  
+
         p {
           @include col {
             padding-left: 24px;
@@ -546,7 +562,9 @@ footer {
         align-items: center;
       }
 
-      .info-uk, .info-canada, .info-australia {
+      .info-uk,
+      .info-canada,
+      .info-australia {
         @include sm {
           max-width: 33%;
         }
@@ -565,7 +583,7 @@ footer {
           }
         }
 
-        
+
       }
     }
   }
@@ -613,7 +631,7 @@ footer {
       }
 
       @include col {
-        padding-left:0;
+        padding-left: 0;
         font-size: 15px;
         line-height: 25px;
         max-width: 90%;
@@ -638,7 +656,7 @@ footer {
     @include sm {
       padding-left: 40px;
     }
-    
+
     @include col {
       padding-left: 24px;
       text-align: center;
@@ -686,45 +704,47 @@ footer {
         flex-direction: column;
         width: 100%;
       }
-      
-      .plan-arrow__01, .plan-arrow__02, .plan-arrow__03 {
-        
+
+      .plan-arrow__01,
+      .plan-arrow__02,
+      .plan-arrow__03 {
+
         @include col {
           max-width: 100%;
           padding-right: 24px;
         }
-        
+
         h2 {
           @include sm {
             font-size: 28px;
             line-height: 32px;
           }
-          
+
           @include col {
             max-width: 100%;
           }
         }
-        
+
         p {
           @include sm {
             max-width: 91%;
             font-size: 15px;
             line-height: 25px;
           }
-          
+
           @include col {
             max-width: 98.5%;
           }
         }
-        
-        
+
+
       }
-      
-      
 
-      
 
-      
+
+
+
+
     }
   }
 }
@@ -742,7 +762,7 @@ footer {
     @include sm {
       margin: 0;
     }
-    
+
     .cards-small {
       max-width: 38%;
 
@@ -759,7 +779,7 @@ footer {
         display: flex;
         flex-direction: column;
       }
-      
+
       @include col {
         display: flex;
         flex-direction: column;
@@ -772,13 +792,13 @@ footer {
         @include sm {
           max-width: 100%;
         }
-        
+
         h1 {
           @include sm {
             display: flex;
             justify-content: space-between;
           }
-          
+
           @include col {
             font-size: 24px;
             line-height: 28px;
@@ -796,7 +816,7 @@ footer {
 
         .card-info__text {
           display: flex;
-          
+
           @include col {
             display: flex;
             flex-direction: column;
@@ -817,7 +837,7 @@ footer {
       }
 
       .card-order {
-        
+
         p {
           @include sm {
             max-width: 90%;

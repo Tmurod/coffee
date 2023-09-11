@@ -1,4 +1,3 @@
-
 @import "_mixins";
 
 body {
@@ -52,16 +51,14 @@ body {
   }
 }
 
-
 header {
-
   .section-header {
     padding: 44px 0;
 
     img {
       cursor: pointer;
       transition: 1s;
-      
+
       &:hover {
         transform: scale(1.1);
       }
@@ -70,14 +67,14 @@ header {
     .burger {
       display: none;
     }
-    
+
     ul {
       gap: 33px;
 
       li {
         list-style: none;
         transition: 1s;
-        
+
         &:hover {
           color: #333D4B;
           transform: translate(5px, 5px);
@@ -100,7 +97,7 @@ header {
 // sectioin-intro__first-page
 
 .section-intro__first-page {
-  
+
   .intro__first-page {
     background-image: url("../images/lg-first-page/lg-first-page__intro.png");
     background-repeat: no-repeat;
@@ -143,7 +140,7 @@ header {
       font-family: "Fraunces 9pt";
       cursor: pointer;
       transition: 1s;
-      
+
       &:hover {
         transform: scale(1.1);
       }
@@ -163,21 +160,23 @@ header {
     padding-top: 136px;
 
     .collection-info {
-        text-align: center;
-        padding-top: 240px;
-        
-        div {
-        transition: 1s;
-          
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
+      text-align: center;
+      padding-top: 240px;
 
-      .espresso-text, .planalto-text,
-      .picollo-text, .danche-text {
+      div {
+        transition: 1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .espresso-text,
+      .planalto-text,
+      .picollo-text,
+      .danche-text {
         margin-top: 71px;
-        
+
 
         h3 {
           font-family: 'Fraunces 9pt';
@@ -214,9 +213,9 @@ header {
     background-size: contain;
 
     .about-subtitle {
-     text-align: center;
-     color: #FEFCF7;
-     padding-top: 100px;
+      text-align: center;
+      color: #FEFCF7;
+      padding-top: 100px;
 
       h1 {
         font-family: 'Fraunces 9pt';
@@ -240,10 +239,12 @@ header {
       margin-right: 60px;
       text-align: center;
 
-      .about-card__seed, .about-card__box,
+      .about-card__seed,
+      .about-card__box,
       .about-card__truck {
         margin-right: 30px;
-        background: #0E8784;margin-top: 86px;
+        background: #0E8784;
+        margin-top: 86px;
         border-radius: 8px;
 
         .card-header {
@@ -321,13 +322,16 @@ header {
 
     .number-cards {
 
-      .cards-01, .cards-02, .cards-03 {
+      .cards-01,
+      .cards-02,
+      .cards-03 {
         padding-bottom: 64px;
-      
+
         .cards-header {
 
           h1 {
-            color: #FDD6BA;font-family: 'Fraunces 9pt';
+            color: #FDD6BA;
+            font-family: 'Fraunces 9pt';
             font-style: normal;
             font-weight: 900;
             font-size: 72px;
@@ -392,7 +396,7 @@ footer {
 
         li {
           list-style: none;
-          transition: 1s; 
+          transition: 1s;
 
           &:hover {
             transform: translate(5px, 5px);
@@ -466,7 +470,7 @@ footer {
   padding-bottom: 168px;
 
   .section-coffee {
-    
+
     .coffee-with__man {
       padding-left: 85px;
 
@@ -476,7 +480,7 @@ footer {
 
       .coffee-man__text {
         padding-left: 125px;
-        
+
         h2 {
           font-family: 'Fraunces 9pt';
           font-weight: 900;
@@ -498,13 +502,14 @@ footer {
     }
 
     .coffee-glass {
-      background: #2C343E;      margin-top: 244px;
+      background: #2C343E;
+      margin-top: 244px;
       padding-bottom: 88px;
       border-radius: 10px;
 
       .coffee-glass__text {
         padding-left: 85px;
-        
+
         h2 {
           font-family: 'Fraunces 9pt';
           font-weight: 900;
@@ -540,7 +545,7 @@ footer {
   padding-bottom: 168px;
 
   .section-country {
-    
+
     h2 {
       font-family: 'Fraunces 9pt';
       font-weight: 900;
@@ -550,6 +555,7 @@ footer {
       padding-left: 125px;
       padding-bottom: 72px;
     }
+
     .country-info {
 
       h1 {
@@ -616,7 +622,7 @@ footer {
   padding-bottom: 159px;
 
   .plan-arrow {
-    background: #2C343E;      
+    background: #2C343E;
     border-radius: 10px;
     padding-left: 85px;
 
@@ -690,7 +696,7 @@ footer {
   .section-cards {
 
     .cards-small {
-      
+
 
       hr {
         opacity: 0.25;
@@ -720,7 +726,7 @@ footer {
         &:hover {
           color: #333D4B;
           opacity: 1;
-          transform: scale(1.1);  
+          transform: scale(1.1);
 
           span {
             color: #0E8784;
@@ -728,12 +734,12 @@ footer {
         }
       }
     }
-    
+
     .cards-info {
 
       .card-info {
         padding-bottom: 80px;
-        
+
         h1 {
           font-family: 'Fraunces 9pt';
           font-weight: 900;
@@ -765,7 +771,7 @@ footer {
             h3 {
               color: #FFFFFF;
             }
-  
+
             p {
               color: #FEFCF7;
             }
@@ -795,8 +801,8 @@ footer {
       }
 
       .card-order {
-        background-color: 
-        #2C343E;
+        background-color:
+          #2C343E;
 
         h2 {
           font-weight: 400;
